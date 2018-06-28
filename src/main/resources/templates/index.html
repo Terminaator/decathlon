@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>decathlon</title>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <!-- Css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script defer='defer' src="/main.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Decathlon calculator</h2>
+    <p><b>NB!</b> Performance by the athlete, measured in seconds (running)
+        , metres (throwing), or centimetres (jumping).</p>
+    <table class="table table-hover">
+        <thead>
+        <tr class="active">
+            <th>Event</th>
+            <th>Performance</th>
+            <th>Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>100m</td>
+            <td><input type="text" id="r100m" oninput="func('r100m','result0',0)"></td>
+            <td id="result0"></td>
+        </tr>
+        <tr>
+            <td>Long Jump</td>
+            <td><input type="text" id="long" oninput="func('long','result1',1)"></td>
+            <td id="result1"></td>
+        </tr>
+        <tr>
+            <td>Shot put</td>
+            <td><input type="text" id="shot" oninput="func('shot','result2',2)"></td>
+            <td id="result2"></td>
+        </tr>
+        <tr>
+            <td>High Jump</td>
+            <td><input type="text" id="high" oninput="func('high','result3',3)"></td>
+            <td id="result3"></td>
+        </tr>
+        <tr>
+            <td>400m</td>
+            <td><input type="text" id="r400m" oninput="func('r400m','result4',4)"></td>
+            <td id="result4"></td>
+        </tr>
+        <tr>
+            <td>110m hurdles</td>
+            <td><input type="text" id="r110m" oninput="func('r110m','result5',5)"></td>
+            <td id="result5"></td>
+        </tr>
+        <tr>
+            <td>Discus throw</td>
+            <td><input type="text" id="discus" oninput="func('discus','result6',6)"></td>
+            <td id="result6"></td>
+        </tr>
+        <tr>
+            <td>Pole vault</td>
+            <td><input type="text" id="pole" oninput="func('pole','result7',7)"></td>
+            <td id="result7"></td>
+        </tr>
+        <tr>
+            <td>Javelin throw</td>
+            <td><input type="text" id="javelin" oninput="func('javelin','result8',8)"></td>
+            <td id="result8"></td>
+        </tr>
+        <tr>
+            <td>1500m</td>
+            <td><input type="text" id="r1500m" oninput="func('r1500m','result9',9)"></td>
+            <td id="result9"></td>
+        </tr>
+        <tr class="active">
+            <td id="val">Value: 0</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
